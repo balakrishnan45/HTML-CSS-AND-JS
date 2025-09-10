@@ -1,0 +1,172 @@
+#markSheetContainer{
+    width: 60%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    background-color: aliceblue;
+    border: 5px solid rgb(140, 140, 140);
+    background-image: linear-gradient(to right, rgb(255 249 242) , rgb(224, 253, 255), rgb(255 249 242) );
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+#markSheetBorder{
+    margin: 4px 5px;
+    border: 1px solid black;
+}
+
+#collegeDetailsHead{
+    width: 100%;
+    display: flex;
+
+}
+#collegeLogoDiv{
+    width: 19%;
+}
+#collegeDetailsDiv{
+    width: 62%;
+}
+#studentImageDiv{
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 120px;
+}
+#studentImage{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 2px;
+}
+#collegeDetailsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.UniversityDetails{
+    margin: 0px;
+}
+
+
+
+
+ .StuDetaTable, .StuDetaTableRow, .StuDetaTableTitle, .StuDetaTableAns{
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
+.StuDetaTableTitle{
+    padding: 6px 0px 6px 6px;
+    font-size: 12px;
+}
+.StuDetaTableAns{
+    font-weight: bold;
+    align-content: flex-end;
+    padding-left: 8px;
+    font-size: 14px;
+}
+#studentName{
+    align-content: normal;
+}
+
+
+
+#markTableContainer {
+    position: relative;
+}
+
+.background-logo {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 320px;
+    height: 320px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.semTH, .partTH, .oneTH, .twoTH{
+    width: 5%;
+}
+.courseTH, .threeTH, .fourTH{
+    width: 8%;
+}
+.markSheetTableTrTH{
+    font-size: 14px;
+    color: #414141;
+}
+.markSheetTable, .markSheetTableTr, .sem, .path, .course, .subject, .one, .two, .three, .four,.semTD, .courseTD, .partTD, .subjectTD, .oneTD, .twoTD, .threeTD, .fourTD{
+    border: 1px solid black !important;
+    border-collapse: collapse;
+}
+.markSheetTableTr, .semTD, .courseTD, .partTD, .subjectTD, .oneTD, .twoTD, .threeTD, .fourTD{
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+}
+.sem, .path, .course, .subject, .one, .two, .three, .four,.semTD, .courseTD, .partTD, .subjectTD, .oneTD, .twoTD, .threeTD, .fourTD{
+    height: 16px;
+}
+
+.innerTD{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    padding: 1px 3px;
+    font-weight: bold;
+    color: #000000;
+}
+.innerCourse, .innerTitle{
+    display: block;
+    margin-left: 5px;
+}
+#markSheetTableLastData{
+    height: 60vh; 
+    display: flex; 
+    justify-content: center;
+    font-size: 14px;
+    color: #414141;
+    font-weight: bold;
+}
+
+
+/* Credits */
+
+#creditsTable, .creditsTableR, .creditsSameWidth, .creditsdifWidth{
+    border: 1px solid black;
+    border-collapse: collapse;
+} 
+.creditsSameWidth{
+    width: 10.5%;
+}
+.innerData{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    padding: 1px 3px;
+    font-weight: bold;
+    color: #000000;
+    padding: 4px 0px;
+}
+
+/* Footer */
+#footer{
+    display: flex;
+    height: 70px;
+    padding: 0px 5px;
+}
+#sigOfCandidateDiv{
+    width: 60%;
+    background-image: url("./bricks.png");
+    background-size: 31px;
+    display: flex;
+    align-items: flex-end;
+    background-size: 75px;
+}
+#controllerOfExamiDiv{
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}

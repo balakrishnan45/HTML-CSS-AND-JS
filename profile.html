@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+    <link rel="styleSheet" href="./profile.css" />
+</head>
+
+<body>
+
+    <div id="studentDetailsContainer">
+        <div id="headContainer">
+            <div style="display: flex;gap: 15px; margin-left: 15px;align-items: center;">
+                <div style="width: 50px; height: 50px;">
+                    <img src="../html Task1/profile.jpg" style=" border-radius: 10px;" width="100%"
+                        height="100%" />
+                </div>
+                <h3>Build Profile</h3>
+            </div>
+        </div>
+        <div id="basicInformationDetailsContainer">
+            <div id="basicInformationHead">
+                Basic Information
+            </div>
+            <div id="basicInformationDetails" class="blockInformationDetails">
+                <div id="basicInformationDetails_Left" class="blockInformationDetails_Left">
+                    <table id="basicInformationDetails_LeftTable">
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="empid">Employee ID<p class="mandatory">*</p>
+                                    </label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="empid" /></td>
+                        </tr>
+                        <!-- <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="emailAdd">Email address<p class="mandatory">*
+                                    </p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="email" id="emailAdd" /></td>
+                        </tr> -->
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="fName">First Name<p class="mandatory">*</p>
+                                    </label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="fName" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="lName">Last Name<p class="mandatory">*</p>
+                                    </label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="lName" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="fullName">Full Name</label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="fullName" /></td>
+                        </tr>
+                        <!-- <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="otherEmail">Other Email<p class="mandatory">*
+                                    </p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="otherEmail" /></td>
+                        </tr> -->
+                    </table>
+                </div>
+
+                <div id="basicInformationDetails_Right" class="blockInformationDetails_right">
+                    <table id="basicInformationDetails_RightTable">
+                        <tr class="basicInfo_RTableTR">
+                        <tr class="basicInfo_RTableTR">
+                            <td class="basicInfo_RTabTRlabel"><label for="nickName">Nick name</label></td>
+                            <td class="basicInfo_RTabTRInput"><input type="text" name="nickName" id="nickName" /></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div id="personalDetailsContainer">
+
+            <div id="basicInformationHead">
+                Personal Details
+            </div>
+            <div id="personalDetails_Left" class="blockInformationDetails">
+                <div id="basicInformationDetails_Left" class="blockInformationDetails_Left">
+                    <table id="basicInformationDetails_LeftTable">
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="dateOfBirth">Date of Birth<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="date" id="dateOfBirth" min="2000-01-01" max="2006-12-31"/></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="perMobNum">Personal Mobile Number<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="number" id="perMobNum" /></td>
+                        </tr>
+                        <!-- <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="perEmailID">Personal Email ID<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="email" id="perEmailID" required/></td>
+                        </tr> -->
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="EmerContNum">Emergency Contact Number<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="number" id="EmerContNum" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="emerContPerson">Emergency Contact Person's
+                                    <br>Name & Relationship<p class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="emerContPerson" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="fatherName">Father's Name<p class="mandatory">
+                                        *</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="fatherName" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="motherName">Mother's Name<p class="mandatory">
+                                        *</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="motherName" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel">
+                                <label for="Gender">Gender<p class="mandatory">*</p></label>
+                            </td>
+                            <td class="basicInfo_LTabTRInput">
+                                <select id="Gender">
+                                    <option value="">-- Select Gender --</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel">
+                                <label for="MaritalStatus">Marital Status<p class="mandatory">*</p></label>
+                            </td>
+                            <td class="basicInfo_LTabTRInput">
+                                <select id="MaritalStatus">
+                                    <option value="">-- Select Marital Status --</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="PANNumber">PAN Number<p class="mandatory">*
+                                    </p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="PANNumber" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="AadhaarNumber">Aadhaar Number<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="number" id="AadhaarNumber" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="AadhaarNumber">Name as per Aadhaar<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="NameAsPerAadhaar" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="Resume">Resume<p class="mandatory">*</p>
+                                    </label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="file" id="Resume" /></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="basicInformationDetails_Right" class="blockInformationDetails_right">
+                    <table id="basicInformationDetails_RightTable">
+                        <tr class="basicInfo_RTableTR">
+                        <tr class="basicInfo_RTableTR">
+                            <td class="basicInfo_RTabTRlabel"><label for="PresentAddress">Present Address<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_RTabTRInput"><textarea type="text" name="nickName"
+                                    id="PresentAddress"></textarea></td>
+                        </tr>
+                        <tr class="basicInfo_RTableTR">
+                            <td class="basicInfo_RTabTRlabel"><label for="PermanentAddress">Permanent Address<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_RTabTRInput"><textarea type="text" name="nickName"
+                                    id="PermanentAddress"></textarea></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="bankInformationContainer">
+
+            <div id="bankInformationHead">
+                Bank Information
+            </div>
+            <div id="bankInformationDetails" class="blockInformationDetails">
+                <div id="basicInformationDetails_Left" class="blockInformationDetails_Left">
+                    <table id="basicInformationDetails_LeftTable">
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="bankName">Name of the Bank<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput">
+                                <select id="bankName">
+                                    <option value="">-- Select Bank Name --</option>
+                                    <option value="StateBankofIndia">State Bank of India (SBI)</option>
+                                    <option value="PunjabNationalBank">Punjab National Bank (PNB)</option>
+                                    <option value="BankofBaroda">Bank of Baroda (BOB)</option>
+                                    <option value="CanaraBank">Canara Bank</option>
+                                    <option value="UnionBankofIndia">Union Bank of India</option>
+                                    <option value="CentralBankofIndia">Central Bank of India</option>
+                                    <option value="IndianBank">Indian Bank</option>
+                                    <option value="IndianOverseasBank">Indian Overseas Bank (IOB)</option>
+                                    <option value="CorporationBank">Corporation Bank</option>
+                                    <option value="ICICIBank">ICICI Bank</option>
+                                    <option value="HDFCBank">HDFC Bank</option>
+                                    <option value="AxisBank">Axis Bank</option>
+                                    <option value="YesBank">Yes Bank</option>
+                                    <option value="KotakMahindraBank">KotakMahindraBank</option>
+                                    <option value="IDBIBank">IDBI Bank</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="nameasperBankPassbook">Name as per Bank
+                                    Passbook<p class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="nameasperBankPassbook" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="IFSCCode">IFSC Code<p class="mandatory">*</p>
+                                    </label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="text" id="IFSCCode" /></td>
+                        </tr>
+                        <tr class="basicInfo_LTableTR">
+                            <td class="basicInfo_LTabTRlabel"><label for="CancelledChequeOrPassbook">Cancelled
+                                    Cheque/Passbook<p class="mandatory">*</p></label></td>
+                            <td class="basicInfo_LTabTRInput"><input type="file" id="CancelledChequeOrPassbook" /></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="basicInformationDetails_Right" class="blockInformationDetails_right">
+                    <table id="basicInformationDetails_RightTable">
+                        <tr class="basicInfo_RTableTR">
+                        <tr class="basicInfo_RTableTR">
+                            <td class="basicInfo_RTabTRlabel"><label for="BankAccountNumber">Bank Account Number<p
+                                        class="mandatory">*</p></label></td>
+                            <td class="basicInfo_RTabTRInput"><input type="number" name="BankAccountNumber"
+                                    id="BankAccountNumber" /></td>
+                        </tr>
+                        <tr class="basicInfo_RTableTR">
+                            <td class="basicInfo_RTabTRlabel"><label for="HappyCardNo">Happy Card No</label></td>
+                            <td class="basicInfo_RTabTRInput"><input type="text" name="HappyCardNo" id="HappyCardNo" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="footer">
+            <button type="reset" id="reset" onclick="onClickResetBtn()">Reset</button>
+            <button type="submit" id="submit" onclick="onClickSubmitBtn()">Submit</button>
+        </div>
+
+
+
+        <div id="customAlert" style="display:none;">
+            <div id="customAlertBox">
+                <span id="customAlertMsg"></span>
+                <button onclick="closeCustomAlert()">OK</button>
+            </div>
+        </div>
+
+
+
+
+        <script src="./profile.js"></script>
+
+</body>
+
+</html>
